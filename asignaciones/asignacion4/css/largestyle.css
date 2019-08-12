@@ -1,0 +1,41 @@
+ul {
+    font-size: 18px;
+    font-family: cursive;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+  
+  li {
+    float: left;
+    align-self: center;
+  }
+  
+  li a {
+    align-self: center;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #ffcf3d;
+    color: #000000;
+  }
+
+  div img{
+    display: block;
+
+  }
+
+  div p {
+  display:  block;
+  width: 300px;
+
+  }
