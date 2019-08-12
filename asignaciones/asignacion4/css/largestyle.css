@@ -28,14 +28,20 @@ ul {
     background-color: #ffcf3d;
     color: #000000;
   }
+  div{
 
+    display: inline-block;
+  }
   div img{
-    display: block;
-
+    background-color: tomato;
+    display: inline-block;
+    width: 45%;
   }
 
   div p {
-  display:  block;
-  width: 300px;
+    background-color: steelblue;
+    display:  inline-block;
+    width: 45%;
+
 
   }
