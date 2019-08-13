@@ -1,3 +1,7 @@
+body {
+  font-family: cursive;
+}
+
 ul {
     font-size: 18px;
     font-family: cursive;
@@ -28,20 +32,40 @@ ul {
     background-color: #ffcf3d;
     color: #000000;
   }
-  div{
 
+  section{
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    background-color: #F2F2F2;
+    width: 100%;
     display: inline-block;
   }
   div img{
     background-color: tomato;
-    display: inline-block;
+    display: block;
+    float: left;
     width: 45%;
   }
 
   div p {
-    background-color: steelblue;
-    display:  inline-block;
+    font-size: 20px;
+    padding-top: 8%;
+    margin-right: 5%;
+    float: right;
+    display:  block;
     width: 45%;
+  }
 
+  h2{
+    margin-bottom: 0%;
+    font-size: 35px;
+    text-align: center;
+    background-color: #ffcf3d;
+    padding: 3px;
+  }
 
+  footer p{
+
+  text-align: center;
   }
