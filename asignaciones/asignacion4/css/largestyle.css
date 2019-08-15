@@ -67,7 +67,9 @@ ul {
     padding: 3px;
   }
 
-  footer p{
-
-  text-align: center;
+  footer {
+    background-color: #000000;
+    color: #F2F2F2;
+    text-align: center;
   }
+
