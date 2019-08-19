@@ -1,5 +1,7 @@
 @media screen and (max-width: 768px) {
-    
+    body {
+        font-family: cursive;
+      }
     section img {
         float: left;
         display : block;
