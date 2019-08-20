@@ -29,6 +29,9 @@
         max-width: 760px;
         background-color: #000;
     }
+    .container {
+        grid-template-columns: 1fr  ;
+    }
     .navigation {
         list-style: none;
         text-align: center;
