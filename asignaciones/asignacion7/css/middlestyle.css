@@ -2,4 +2,9 @@
 .container {
     grid-template-columns: 1fr 1fr ;
 }
+
+section p{
+    padding-top: 9px;
+}
+
 }

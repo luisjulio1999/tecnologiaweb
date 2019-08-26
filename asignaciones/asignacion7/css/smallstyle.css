@@ -3,9 +3,10 @@
         font-family: cursive;
       }
     section img {
-        float: left;
-        display : block;
-        width: 100%;
+        display : flex;
+        justify-content: center;
+        align-self: center;
+        width:80%;
     }
     section{
 
@@ -14,13 +15,12 @@
    section p{
         float: left;
         display: block;
-        width: 100%;
+        width: 97%;
         padding: 1%;
         font-size: 13px;
         text-align: center;
     }
     h2 {
-        width: 100%;
         font-size: 18px;
     }
 
