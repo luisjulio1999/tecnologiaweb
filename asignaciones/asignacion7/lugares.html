@@ -64,7 +64,7 @@
 
         </section>
         <br>
-        <h2>CRISTO DE LA CONCORDIA</h2>
+        <h2 id="cristo"></h2>
         <section>
 
             <div><img src="img/Cristo de la Concordia.jpeg" alt="comida tipica" ></div>
@@ -84,5 +84,20 @@
         </script>
     </footer>
    <script src="js/script.js"></script>
+   <script>
+    var requestURL = 'https://jessicarojas99.github.io/TecnologiaWeb/Asignaciones/Asignacion9/app.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+    var localidad = request.response;
+    mostrarlocalidades(localidad);
+    }
+    function mostrarlocalidades(jsonObj){
+        var local=jsonObj['localidades'];
+        document.getElementById('cristo').innerHTML=local[1].name;
+    }
+   </script>
 </body>
 </html>
