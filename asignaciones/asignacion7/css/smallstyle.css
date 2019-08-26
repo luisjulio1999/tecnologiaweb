@@ -6,7 +6,7 @@
         display : flex;
         justify-content: center;
         align-self: center;
-        width:80%;
+        width: 62%;
     }
     section{
 
@@ -65,5 +65,13 @@
       */
     .responsive li {
         display: block;
+    }
+    #contform{
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    #contform input {
+        width:80%;
     }
   }
