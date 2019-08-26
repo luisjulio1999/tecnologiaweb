@@ -1,9 +1,37 @@
+
 body {
+  
   font-family: cursive;
+  background-image: url("img/fondo1.jpg");
+   
 }
 .navigation li:first-child {
   display: none;
+  
 }
+.bol
+{
+  width: 140px;
+  padding-left: 40px;
+  padding-top: 29px;
+}
+.cbb
+{
+  width: 85px;
+}
+h3{
+  font-size: 50px;
+  text-align: center;
+
+}
+.fondo1
+{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 3px;
+  border: 6px solid #ffcf3d ;
+}
+
 ul {
     font-size: 18px;
     font-family: cursive;
@@ -16,6 +44,7 @@ ul {
   
   li {
     float: left;
+    margin-left: 20px;
     align-self: center;
   }
   .send{
@@ -24,6 +53,15 @@ ul {
   label input{
     width: 100%;
 
+  }
+  h1
+  {
+    text-align: center;
+    font-family: cursive;
+    font-size: 60px;
+    background-image: url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+    margin-left: 10%;
+    margin-right: 10%;
   }
   #contform{
     display: flex;
@@ -62,15 +100,20 @@ ul {
     border:2px solid #000000;
 
   }
+  .logo
+  {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
   li a {
     align-self: center;
     display: block;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 14px 16px;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 15px;
   }
   
   /* Change the link color to #111 (black) on hover */
@@ -84,53 +127,71 @@ ul {
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 1%;
-    background-color: #F2F2F2;
-    width: 100%;
+    background-image: url("img/bolivia.png");
+    width: 95%;
     display: inline-block;
+    background-color: #c0c0c0;
+  
+  }
+  main
+  {
+    background-color: #f7f0dd;
   }
   div img{
     display: block;
     float: left;
-    width: 45%;
+    width: 40%;
+    padding-left: 70px;
   }
 
   div p {
     font-size: 20px;
-    padding-top: 8%;
-    margin-right: 5%;
+    padding-top: 4%;
+   
+    margin-right: 7%;
+    text-align: justify;
     float: right;
     display:  block;
     width: 45%;
+    
   }
 
   h2{
-    margin-bottom: 0%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 35px;
     text-align: center;
     background-color: #ffcf3d;
     padding: 3px;
+    border:black 4px ridge;
   }
   figure{
   display: block;
   }
+
   .container {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+   
   }
   .container img {
     width: 100%;
     padding-bottom: 5px;
     -webkit-transition: all 0.5s;
-	  transition: all 0.5s;
+    transition: all 0.5s;
+    padding-left: 30px;
   }
   .container img:hover{
-    -webkit-transform: scale(1.15);
-	  -ms-transform: scale(1.15);
-	  transform: scale(1.15);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
 
   }
+
   footer {
     background-color: #000000;
     color: #F2F2F2;
