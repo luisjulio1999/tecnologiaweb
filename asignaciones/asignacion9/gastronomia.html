@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/logotipocbbaturisitica.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/largestyle.css">
     <link rel="stylesheet" href="css/middlestyle.css">
@@ -16,18 +17,125 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a class="logo" href="index.html"><img  class="cbb" src="img/logotipocbbaturisitica.png" alt="logo" ></a></li>
-                <li><a href="">Lugares Turisticos</a></li>
-                <li><a href="#">Fauna y flora</a></li>
-                <li><a href="#">Gastronomia</a></li>
-                <li><a href="#">Clima</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><img class="bol" src="img/bolivia.png" alt="logo"></li>
+                    <li><a class="logo" href="index.html"><img  class="cbb" src="img/logotipocbbaturisitica.png" alt="logo" ></a></li>
+                    <li><a href="lugares.html">Lugares Turisticos</a></li>
+                    <li><a href="faunayflora.html">Fauna y flora</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
+                    <li><a href="clima.html">Clima</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><img class="bol" src="img/bolivia.png" alt="logo"></li>
             </ul>
         </nav>
 </header>
 <main>
+    <h2 id="aji"></h2>
+    <section>
+
+        <div><img src="img/ajipatas.jpg" alt="ajipatas" ></div>
+        <div>
+                <p id="ajip"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="chank"></h2>
+    <section>
+
+        <div><img src="img/chankapollo.jpg" alt="chankapollo" ></div>
+        <div>
+                <p id="chankp"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="charque"></h2>
+    <section>
+
+        <div><img src="img/charque.jpg" alt="charque" ></div>
+        <div>
+                <p id="charquep"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="chicha"></h2>
+    <section>
+
+        <div><img src="img/55f6d14cd65b8.jpeg" alt="chicharron" ></div>
+        <div>
+                <p id="chichap"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="chori"></h2>
+    <section>
+
+        <div><img src="img/chorizocriollo.jpg" alt="chorizo criollo" ></div>
+        <div>
+                <p id="chorip"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="esca"></h2>
+    <section>
+
+        <div><img src="img/escabeche.jpg" alt="escabeche" ></div>
+        <div>
+                <p id="escap"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="fideo"></h2>
+    <section>
+
+        <div><img src="img/fideouchu.jpg" alt="fideos uchu" ></div>
+        <div>
+                <p id="fideop"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="lappi"></h2>
+    <section>
+
+        <div><img src="img/lapping.jpg" alt="lapping" ></div>
+        <div>
+                <p id="lappip"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="pique"></h2>
+    <section>
+
+        <div><img src="img/pique-a-lo-macho-12.jpg" alt="pique" ></div>
+        <div>
+                <p id="piquep"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="puche"></h2>
+    <section>
+
+        <div><img src="img/puchero.jpg" alt="puchero" ></div>
+        <div>
+                <p id="puchep"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="sill"></h2>
+    <section>
+
+        <div><img src="img/55f6d1955c394.jpeg" alt="sillpancho" ></div>
+        <div>
+                <p id="sillp"></p>
+            </div>
+    </section>
+    <br>
+    <h2 id="sopa"></h2>
+    <section>
+
+        <div><img src="img/sopamani.jpg" alt="sopamani" ></div>
+        <div>
+                <p id="sopap"></p>
+            </div>
+    </section>
 
 </main>
 
@@ -37,6 +145,56 @@
     </script>
 </footer>
 <script src="js/script.js"></script>
+<script>
+    var requestURL = 'https://jessicarojas99.github.io/TecnologiaWeb/Asignaciones/Asignacion9/app.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+    var gastronomia = request.response;
+    mostrarlocalidades(gastronomia);
+    }
+    function mostrarlocalidades(jsonObj){
+        var gastro=jsonObj['Gastronomia'];
+        document.getElementById('aji').innerHTML=gastro[0].nombre;
+        document.getElementById('ajip').innerHTML=gastro[0].concepto;
+
+        document.getElementById('chank').innerHTML=gastro[1].nombre;
+        document.getElementById('chankp').innerHTML=gastro[1].concepto;
+
+        document.getElementById('charque').innerHTML=gastro[2].nombre;
+        document.getElementById('charquep').innerHTML=gastro[2].concepto;
+
+        document.getElementById('chicha').innerHTML=gastro[3].nombre;
+        document.getElementById('chichap').innerHTML=gastro[3].concepto;
+
+        document.getElementById('chori').innerHTML=gastro[4].nombre;
+        document.getElementById('chorip').innerHTML=gastro[4].concepto;
+
+        document.getElementById('esca').innerHTML=gastro[5].nombre;
+        document.getElementById('escap').innerHTML=gastro[5].concepto;
+
+        document.getElementById('fideo').innerHTML=gastro[6].nombre;
+        document.getElementById('fideop').innerHTML=gastro[6].concepto;
+
+        document.getElementById('lappi').innerHTML=gastro[7].nombre;
+        document.getElementById('lappip').innerHTML=gastro[7].concepto;
+
+        document.getElementById('pique').innerHTML=gastro[8].nombre;
+        document.getElementById('piquep').innerHTML=gastro[8].concepto;
+
+        document.getElementById('puche').innerHTML=gastro[9].nombre;
+        document.getElementById('puchep').innerHTML=gastro[9].concepto;
+
+        document.getElementById('sill').innerHTML=gastro[10].nombre;
+        document.getElementById('sillp').innerHTML=gastro[10].concepto;
+
+        document.getElementById('sopa').innerHTML=gastro[11].nombre;
+        document.getElementById('sopap').innerHTML=gastro[11].concepto;
+
+    }
+   </script>
 
 </body>
 </html>

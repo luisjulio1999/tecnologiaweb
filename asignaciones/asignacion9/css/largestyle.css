@@ -23,8 +23,13 @@ h3{
   font-size: 50px;
   text-align: center;
 }
-#cristou, #lagunau, #taratau, #villau, #carrascou{
+#subtitulo{
+  padding-bottom: 0%;
+}
+
+#mamiferosp, #avesp, #reptilesp, #pecesp, #florap, #mamiferosp1, #avesp1, #reptilesp1, #pecesp1, #florap1, #cristou, #lagunau, #taratau, #villau, #carrascou{
   padding-top: 0%; 
+  
 }
 .fondo1
 {

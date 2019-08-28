@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/largestyle.css">
     <link rel="stylesheet" href="css/middlestyle.css">
     <link rel="stylesheet" href="css/smallstyle.css">
+    <link rel="shortcut icon" href="img/logotipocbbaturisitica.png" />
     <title>Cochabamba turistica</title>
 </head>
 <body>
@@ -16,19 +17,22 @@
         <nav>
             <ul class="navigation">
                 <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a class="logo" href="index.html"><img  class="cbb" src="img/logotipocbbaturisitica.png" alt="logo" ></a></li>
-                <li><a href="">Lugares Turisticos</a></li>
-                <li><a href="#">Fauna y flora</a></li>
-                <li><a href="#">Gastronomia</a></li>
-                <li><a href="#">Clima</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><img class="bol" src="img/bolivia.png" alt="logo"></li>
+                    <li><a class="logo" href="index.html"><img  class="cbb" src="img/logotipocbbaturisitica.png" alt="logo" ></a></li>
+                    <li><a href="lugares.html">Lugares Turisticos</a></li>
+                    <li><a href="faunayflora.html">Fauna y flora</a></li>
+                    <li><a href="gastronomia.html">Gastronomia</a></li>
+                    <li><a href="clima.html">Clima</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><img class="bol" src="img/bolivia.png" alt="logo"></li>
             </ul>
         </nav>
 </header>
 <main>
-
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Cochabamba, Bolivia is <span id="cc-temp"></span>&deg; C </p>
+        <p id="cc-temp"></p>
+        
 </main>
 
 <footer>
@@ -37,6 +41,16 @@
     </script>
 </footer>
 <script src="js/script.js"></script>
-
+<script>
+let weatherRequest = new XMLHttpRequest ();
+let apiURLstring ='https://api.openweathermap.org/data/2.5/weather?lat=-17.414&lon=-66.1653&units=metric&APPID=00b6e80ee1c4c75bcf82365f49ad8f5f';
+weatherRequest.open ('GET', apiURLstring, true);
+weatherRequest.send ();
+ weatherRequest.onload = function () {
+ let weatherData = JSON.parse (weatherRequest.responseText);
+ console.log (weatherData);
+ document.getElementById ('cc-temp'). innerHTML = weatherData.main.temp;
+ }
+</script>
 </body>
 </html>
