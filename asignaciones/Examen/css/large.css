@@ -1,1 +1,137 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 
+}
+header{
+    background-color:#57D7E1;
+    color: #2D5680;
+    padding-top: 30px;
+}
+header img {
+    display: none;
+}
+.navigation a:first-child {
+    display: none;
+  }
+.navigation  {
+    display: flex;
+    justify-content: center;
+    background-color: #828282;
+    height: 30px;
+  }
+  .navigation a{
+    
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  a:hover, #tr1{
+    background-color: #2D5680;
+    color: white;
+  }
+  h1{
+      color: #2D5680;
+  }
+  #temp{
+      height:450px ;
+  }
+  #tempimg{
+      align-self: center;
+      display: flex;
+      justify-content: center;
+    position: absolute;
+  }
+  #tempinf{
+    margin-left: 10px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: center;
+    background-color:rgba(87, 215, 225, 0.7);
+    width: 250px;
+  }
+  h3{
+      color: #2D5680;
+  }
+  #table1{
+      color: black;
+      margin-left: 20px;
+  }
+  table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+  }
+  #pronostico{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+     
+  }
+  #table2 {
+      width: 700px;
+      height: 150px;
+  }
+  #articulo{
+      background-color: #57D7E1;  
+      padding: 30px 40px 15px 20px;  
+      color: #2D5680;
+      margin-bottom: 40px;
+  }
+  #divart{
+    display: flex;
+    flex-direction: row-reverse;
+    
+
+  }
+  #part{
+      width: 350px;
+      padding-right: 10px;
+      text-align: justify;
+  }
+  .contact{
+    background-color: #57D7E1;  
+    padding: 30px 40px 15px 20px;  
+    color: #2D5680;
+    margin-bottom: 40px;
+    display:flex;
+    justify-content: space-around;
+  }
+  #divcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  h3{
+      width: 100%;
+      text-align: center;
+  }
+  hr { 
+      margin-top: 0px;
+      padding-top: 0px;
+    width: 450px;
+    background-color: #828282;
+  }
+  #pcon{
+      text-align: start;
+  }
+  footer{
+        display: flex;
+        justify-content: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+      background-color: #2D5680;
+      color: white;
+  }

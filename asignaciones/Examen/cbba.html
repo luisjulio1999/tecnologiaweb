@@ -7,6 +7,8 @@
 	<title>Bolivia Turistica</title>
 	<meta name="description" content="Assignment for exam web thecnology">
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/large.css">
 
 </head>
 <body>
@@ -34,13 +36,13 @@
 		
 		<main>
 			<h1>Cochabamba</h1>
-			<div>
-				<picture>
-					<img  src="images/cochabamba.jpg" alt="Cochabamba">
+			<div id="temp" >
+				<picture id="tempimg">
+					<img  src="images/cochabamba.jpg" alt="Cochabamba" width="870px">
 			 	</picture>			
-					<div>
-							<h3>Informacion del clima</h3>
-							<table>
+					<div id="tempinf">
+							<h3 id="h31">Informacion del clima</h3>
+							<table id="table1">
 								<tr>            
 								  <td>Tiempo Actual:</td>
 								  <td><span id="currently"></span></td>
@@ -62,10 +64,10 @@
 						</div>
 						
 			</div>
-			<div >
-				<h3>5 Day Forecast</h3>
-				<table>
-					<tr>            
+			<div id="pronostico">
+				<h3>Pronostico del tiempo</h3>
+				<table id="table2">
+					<tr id="tr1">            
 					  <th><span id="day1"></span>Dia 1</th>
 					  <th><span id="day2"></span>Dia 2</th>
 					  <th><span id="day3"></span>Dia 3</th>
@@ -87,30 +89,39 @@
 						<td><span id="temp5"></span></td>
 					</tr>
 					  </table>
-					  <p>Informacion Metereologia:  <a href="https://openweathermap.org/" target=_blank> Open Weather Map </a></p>
+					  <p>Informacion Metereologia:  <a href="https://openweathermap.org/" > Open Weather Map </a></p>
 					</div>
 			
-			<div>
+			<div id="articulo">
 			
 				<article>					
 					<h2>Conoce Cochabamba</h2>
-					
-					<img src="images/cocha1.jpg" alt="Preston Town">
+					<div id="divart">
 
-                    <p>Cochabamba es una ciudad del centro de Bolivia. Un teleférico que parte desde una colina situada en el este lleva a la enorme estatua del Cristo de la Concordia, que ofrece vistas a la zona circundante. En el centro de la ciudad se encuentra la plaza 14 de Septiembre, una plaza colonial rodeada de pórticos, y la catedral de San Sebastián, de estilo barroco andino. En las proximidades hay varias iglesias coloniales, como la de Santo Domingo, que destaca por su llamativa fachada de piedra tallada.</p>
-                    <p>Se encuentra enclavada en un valle de tierras fértiles en la zona central del país, en la región sub-andina. Se asienta al pie de la Cordillera Tunari, donde está el cerro Tunari, que es el punto más alto del departamento de Cochabamba (5,035 msnm). Por en medio de la ciudad cruza el Río Rocha de noreste a suroeste. Con una altitud promedio de 2570, la ciudad se puede jactar de un excelente clima.</p>
+						<img src="images/cocha1.jpg" alt="Preston Town">
+						<div id="part">
+							<p>Cochabamba es una ciudad del centro de Bolivia. Un teleférico que parte desde una colina situada en el este lleva a la enorme estatua del Cristo de la Concordia, que ofrece vistas a la zona circundante. En el centro de la ciudad se encuentra la plaza 14 de Septiembre, una plaza colonial rodeada de pórticos, y la catedral de San Sebastián, de estilo barroco andino. En las proximidades hay varias iglesias coloniales, como la de Santo Domingo, que destaca por su llamativa fachada de piedra tallada.</p>
+							<p>Se encuentra enclavada en un valle de tierras fértiles en la zona central del país, en la región sub-andina. Se asienta al pie de la Cordillera Tunari, donde está el cerro Tunari, que es el punto más alto del departamento de Cochabamba (5,035 msnm). Por en medio de la ciudad cruza el Río Rocha de noreste a suroeste. Con una altitud promedio de 2570, la ciudad se puede jactar de un excelente clima.</p>
+						</div>
+                   
+					</div>
+					
                 </article>	
 			</div>
 			<div class="contact">
 				<a href="#" target=_blank><img src="images/cocha2.jpg" alt="Map Preston"></a>
-				
-				 <h6>Contactos</h6>
-				 <p>
+				<div id="divcont">
+					<h3>Contactos</h3>
+					<hr>
+					
+				 <p id="pcon">
 				  	Conoce cochabamba <br>
 					Cochbamba - Bolivia <br>
 					591-4453215 <br>
 					info@conocebolivia.com
 				</p>
+				</div>
+				 
 			</div> 
 			
 		</main>
@@ -119,7 +130,7 @@
 					&copy;2019 Conoce Bolivia | Atributions |Faviola Arellano <br>
 					<script src="js/currentdate.js"></script>
 					<script src="js/hamburger.js"></script>
-					<script src="js/cbbainfo.js"></script> 
+					<script src="js/cbbainfo.js"></script>
 			</footer>
 	</div>
 </body>

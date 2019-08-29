@@ -139,31 +139,5 @@ request.onload = function() {
     show(infotowns);
 }
 
-//Creating the town information
-function show(jsonObj) {
 
-    var town = jsonObj['towns'];
-    
-   for (var i = 0; i<town.length; i++) {
-      if(town[i].name=='Preston')
-      //||town[i].name=='Soda Springs'||town[i].name=='Fish Haven') 
-        {
-            var myArticle = document.createElement('article');
-            var myList = document.createElement('ul');
 
-            myList.textContent; 
-
-            var townEvents = town[i].events;
-            for (var j = 0; j < townEvents.length; j++) {
-                           
-                var listItem = document.createElement('li');
-                listItem.textContent = townEvents[j];
-                myList.appendChild(listItem);
-            }
-    
-           myArticle.appendChild(myList);
-           section.appendChild(myArticle);
-    } 
-}
-
-}
