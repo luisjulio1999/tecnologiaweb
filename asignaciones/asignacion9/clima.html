@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/logotipocbbaturisitica.png" />
     <title>Cochabamba turistica</title>
 </head>
-<body>
+<body  style="background-image: url(img/sky-1441936_1920.jpg)">
     <header>
         
         <nav>
@@ -28,14 +28,17 @@
             </ul>
         </nav>
 </header>
-<main>
-        <h1>OpenWeatherMap.org API Test</h1>
-        <p>The current temperature in Cochabamba, Bolivia is <span id="cc-temp"></span>&deg; C </p>
-        <p id="cc-temp"></p>
+<main id="backmain">
+        <h1 style="background-image:none">Clima Cochabamba</h1>
+           
+        <p id="teperatura"><span id="actual"></span>&deg; C </p>
+        
+        
+        
         
 </main>
 
-<footer>
+<footer id="footclim">
     <p> Cochabamba turistica &#174; 2019| Teconologia web | Derechos reservados.  </p>
     <script src="js/horacio.js">  
     </script>
@@ -49,7 +52,7 @@ weatherRequest.send ();
  weatherRequest.onload = function () {
  let weatherData = JSON.parse (weatherRequest.responseText);
  console.log (weatherData);
- document.getElementById ('cc-temp'). innerHTML = weatherData.main.temp;
+ document.getElementById ('actual'). innerHTML = weatherData.main.temp;
  }
 </script>
 </body>

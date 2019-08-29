@@ -134,7 +134,6 @@ ul {
     padding-left: 1%;
     padding-right: 1%;
     padding-bottom: 1%;
-    background-image: url("img/bolivia.png");
     width: 95%;
     display: inline-block;
     background-color: #c0c0c0;
@@ -158,6 +157,19 @@ ul {
     display:  block;
     width: 45%;
     
+  }
+  #climah{
+    background-image: none;
+  }
+  #backmain{
+    color: #F2F2F2;
+    text-shadow: 3px 4px #000000;
+  }
+  #teperatura{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 130px;
   }
 
   h2{
@@ -195,10 +207,15 @@ ul {
     transform-style: preserve-3d;
 
   }
+  #footclim{
+    position: absolute;
 
+  }
   footer {
     background-color: #000000;
     color: #F2F2F2;
     text-align: center;
+    bottom: 0px;
+    width: 100%;
   }
 
